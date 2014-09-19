@@ -37,17 +37,15 @@ Neben einem IDE sollte man verschiedene Browser gedownloadet haben. Da man Funkt
 
 Im Grunde ganz einfach, wie bei CSS. Es gibt 3 Arten beim Einbinden von JS. Durch eine Inline-Referenz, Skript-Container und Externe-Referenz. Diese 3 Arten werden hier ganz kurz erklärt:
 
-| **JavaScript Einbinden** |   |
+| **Einbindungs-Art** | Beschreiung und Quellcode |
 | ------------------------ | ------------------- |
-|   | **Inline-Referenz** |
+| **Inline-Referenz** | Die JavaScript Funktion wird direkt in einem Inline-Element eingebunden. |
 | Quellcode	| ```<a href="javascript:alert('Hallo')">Das ist eine Inline-Referenz</a> ``` |
-| Beschreibung | Die JavaScript Funktion wird direkt in einem Inline-Element eingebunden. |
-|   | **Skript-Container** |
+| **Skript-Container** | Hierbei wird einem internen Block-Element eine JavaScript Anweisung zugeteilt. |
 | Quellcode | ```<script> alert("Der interne Skript-Container"); </script> ``` |
-| Beschreibung | Hierbei wird einem internen Block-Element eine JavaScript Anweisung zugeteilt. |
-|   | **Externe-Referenz** |
+| **Externe-Referenz** | Man integriert mit scr (source = quelle) eine externe .js Datei. Ist immer vorhanden |
 | Quellcode | ```<script src="javascript.js"></script> ``` |
-| Beschreibung | Man integriert mit scr (source = quelle) eine externe .js Datei. Ist immer vorhanden |
+
 
 ###Datentypen in JavaScript
 
@@ -81,15 +79,15 @@ Im JavaScript verwendete „Nichts-Namen“:
 
 **Arithmetische Operatoren**
 
-+ (addieren, stringverkettung)
+\+ (addieren, stringverkettung)
 
 \- (subtrahieren)
 
 \* (multiplizieren)
 
-\/ (dividieren)
+/ (dividieren)
 
-\% (modulo)
+% (modulo)
 
 \++ (inkrement)
 
@@ -97,19 +95,19 @@ Im JavaScript verwendete „Nichts-Namen“:
 
 **Vergleichs Operatoren**
 
-\== (wenn beiden gleich)
+== (wenn beiden gleich)
 
 \!= (wenn beide ungleich)
 
-\< (kleiner als)
+< (kleiner als)
 
 \> (grösser als)
 
-\<= (kleiner und gleich als)
+<= (kleiner und gleich als)
 
 \>= (grösser und gleich als)
 
-\=== (abfrage auf gleichen Datentypen)
+=== (abfrage auf gleichen Datentypen)
 
 
 **Zuweisungs Operator**
@@ -121,7 +119,7 @@ Im JavaScript verwendete „Nichts-Namen“:
 
 **Entscheidungsfindung**
 
-Das Skript entscheidet welchen Weg er gehen wird. If und Else ist also eine Abzweigung.
+Man gibt hinter dem if und else einen Vergleichswert. Wenn es true (wahr) ist dann führt er das was in geschweiften Klammer ist aus.
 ```js
 var a = 5;
 if(a < 6){
@@ -130,25 +128,34 @@ if(a < 6){
 
 }
 ```
-wenn(das in der klammer stimmt){
-	dann mach das
-} anderes(wenn es etwas anderes ist){
-	dann mach das
-}
 
 **Schleifen**
 
 Mit schleifen wiederholt man Anweisungen die in den geschweiften Klammern stehen. In den runden Klammen bestimmen wir wie lange der durch sein sollte. Es gibt 3 Arten von Schleifen:
 
-..* For-Schleife
-..* While-Schleife
-..* Do-While-Schleife
+* For-Schleife
+* While-Schleife
+* Do-While-Schleife
 
 ```js
 for (i = 0; i < 10; i++) {
 
 }
 ```
+```js
+while (i >= 10) {
+	i++
+}
+```
+```js
+do {
+	i++
+}
+while (i >= 10) {
+
+}
+```
+
 
 **Sprunganweisung**
 
