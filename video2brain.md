@@ -31,15 +31,14 @@ Neben einem IDE sollte man verschiedene Browser gedownloadet haben. Da man Funkt
 
 ###Firebug, was ist das?
 
-„Firebug“ ist ein Addon was man im Firefox Browser sich gratis Downloaden kann. Es hilft Entwicklern effektiv die Hintergründe der Webseite zu sehen und zu testen. Allgemein empfiehlt sich bei Firefox mit Firebug und beim Internet Explorer eine neu erstellte Seite zu testen.
+„Firebug“ ist ein Addon was man im Firefox Browser sich gratis Downloaden kann. Es hilft Entwicklern effektiv die Hintergründe der Webseite zu sehen und zu testen. Allgemein empfiehlt sich bei Firefox mit Firebug zu arbeiten.
 
 ###Wie fügt man nun ein JavaScript Skript in eine HTML-Seite ein?
 
 Im Grunde ganz einfach, wie bei CSS. Es gibt 3 Arten beim Einbinden von JS. Durch eine Inline-Referenz, Skript-Container und Externe-Referenz. Diese 3 Arten werden hier ganz kurz erklärt:
 
-| **JavaScript Einbinden** |   |
-| ------------------------ | ------------------- |
-|   | **Inline-Referenz** |
+| **JavaScript Einbinden** | **Inline-Referenz** |
+|:------------------------:| ------------------- |
 | Quellcode	| ```<a href="javascript:alert('Hallo')">Das ist eine Inline-Referenz</a> ``` |
 | Beschreibung | Die JavaScript Funktion wird direkt in einem Inline-Element eingebunden. |
 |   | **Skript-Container** |
@@ -52,12 +51,12 @@ Im Grunde ganz einfach, wie bei CSS. Es gibt 3 Arten beim Einbinden von JS. Durc
 ###Datentypen in JavaScript
 
 Es gibt nur 4 Datentypen:
-* number (Nummer: Ganze Zahlen und Kommazahlen)
-* string (Text)
-* boolean (True or False)
-* object (Neues Objekt einfügen)
+* **number** (Nummer: Ganze Zahlen und Kommazahlen)
+* **string** (Text)
+* **boolean** (True or False)
+* **object** (Neues Objekt einfügen)
 
-Diese Einteilung ist sehr weitläufig und daher auch sehr schwer zu kontrollieren. Es gibt noch einen schöneren weg der Deklaration, das ist:
+Diese Einteilung ist sehr weitläufig und daher auch sehr rutschig in der Hand liegt. Es gibt noch einen schöneren weg der Deklaration, das ist:
 ```js
 var variabelnname = number, string, boolish oder object
 ```
@@ -65,7 +64,11 @@ var variabelnname = number, string, boolish oder object
 Zudem ist 'var' (variable) eine nur interne Funktion.
 
 ###Undefined, not defined, null und NaN
-Wenn man einem Variablennamen in js nichts zuteilt, also z.B. var a; dann ist jetzt ‚a‘ definiert als ‚undefined‘ welches eine eigene Funktionsnamen in js ist. Wenn man aber eine Variable ausgeben will ohne dass man sie vorher zugeteilt hat, dann gibt es einen Script-Fehler. Dann gibt es noch eine anderen Funktionsnamen ‚null‘ welcher bei der Kontrolle gibt. Wenn man versucht eine Operation von 2 Texten oder keinen Zahlen-Variablen ausgibt. Dann kommt ‚NaN‘ = ‚NotaNumber‘.
+Wenn man einem Variablennamen in js nichts zuteilt, also z.B.:
+```js
+var a;
+```
+dann ist jetzt ‚a‘ definiert als ‚undefined‘ welches eine eigene Funktionsnamen in js ist. Wenn man aber eine Variable ausgeben will ohne dass man sie vorher zugeteilt hat, dann gibt es einen Script-Fehler. Dann gibt es noch eine anderen Funktionsnamen ‚null‘ welcher bei der Kontrolle gibt. Wenn man versucht eine Operation von 2 Texten oder keinen Zahlen-Variablen ausgibt. Dann kommt ‚NaN‘ = ‚NotaNumber‘.
 
 Im JavaScript verwendete „Nichts-Namen“:
 * **NaN**
@@ -76,46 +79,46 @@ Im JavaScript verwendete „Nichts-Namen“:
 
 **Arithmetische Operatoren**
 
-\+ (addieren, stringverkettung)
+\+ (addieren, Stringverkettung)
 
 \- (subtrahieren)
 
 \* (multiplizieren)
 
-\/ (dividieren)
+/ (dividieren)
 
-\% (modulo)
+% (Modulo)
 
-\++ (inkrement)
+\++ (Inkrement)
 
-\-- (dekrement)
+\-- (Dekrement)
 
 **Vergleichs Operatoren**
 
-\== (wenn beiden gleich)
+== (wenn beiden gleich)
 
 \!= (wenn beide ungleich)
 
-\< (kleiner als)
+< (kleiner als)
 
 \> (grösser als)
 
-\<= (kleiner und gleich als)
+<= (kleiner und gleich als)
 
 \>= (grösser und gleich als)
 
-\=== (abfrage auf gleichen Datentypen)
+=== (abfrage auf gleichen Datentypen)
 
 
 **Zuweisungs Operator**
 
-\= (gleichheitszeichen)
+= (Gleichheitszeichen)
 
 ###Kontrollstrukturen
 
 **Entscheidungsfindung**
 
-Das Skript entscheidet welchen Weg er gehen wird. If und Else ist also eine Abzweigung.
+Das Skript entscheidet welchen Weg er gehen wird. If und Else ist also eine Abzweigung. In den runden Klammern gibst einen Vergleichswert mit, welcher entscheidet ob es ins 'if' oder 'else' kommt.
 ```js
 var a = 5;
 if(a < 6){
@@ -124,19 +127,14 @@ if(a < 6){
 
 }
 ```
-wenn(das in der klammer stimmt){
-	dann mach das
-} anderes(wenn es etwas anderes ist){
-	dann mach das
-}
 
 **Schleifen**
 
 Mit schleifen wiederholt man Anweisungen die in den geschweiften Klammern stehen. In den runden Klammen bestimmen wir wie lange der durch sein sollte. Es gibt 3 Arten von Schleifen:
 
-..* For-Schleife
-..* While-Schleife
-..* Do-While-Schleife
+* For-Schleife
+* While-Schleife
+* Do-While-Schleife
 
 ```js
 for (i = 0; i < 10; i++) {
