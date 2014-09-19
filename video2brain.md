@@ -22,7 +22,7 @@ Webseiten bei denen solche Funktionen genutzt werden:
 * Yahoo! (Formular Überprüfung)
 * Andere Seiten
 
-###Was braucht man um Webseiten zu gestalten?
+###Was braucht es um JavaScript anzuwenden?
 
 Man sollte einige Grundkenntnisse von HTML und CSS haben. Denn ohne diesen 3er Bund wirkt es steif, langweilig und uninteressant.
 Erforderliche Programme:
