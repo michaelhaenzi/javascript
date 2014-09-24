@@ -278,4 +278,53 @@ funktion objekteErzeugen(){
 Hierbei bildet man Wertepaare: Den Schlüssel ("name") und dem dazugehörigen Wert ("Otto").
 Bei dieser Variante handelte es sich um Json (JavaScript Object Notation).
 
-###Arrays
+**Arrays**
+
+Arrays und Objekte sind in JavaScript "so gut wie das gleich". Es ist eine Sammlung von Werten die über einen Bezeichner und ein Index zur verfügung gestellt.
+In JavaScript sollte man Objekte als Arrays und Arrays als Objekte sehen.
+Es gibt 3 Varianten einen Array zu erzeugen:
+
+* Mithilfe der Konstruktor-Methode
+* Json Notation
+* Literale Form
+
+```js
+funktion arraysErzeugen(){
+	var a1 = new Array();
+	var a2 = {
+		"name":"Meier",
+		"vorname":"Otto"
+	}
+	var a3 = [1, 2, 3, 7, 9, 11];
+}
+```
+
+**Dot and Array Notation**
+
+Unter Dot Notation versteht man das Zugreifen auf ein/en Objekt oder Array.
+Das geschiet - wie der name schon sagt - mit einem dot, also Punkt (.).
+Sieht wie folgt aus:
+```js
+//Objekt
+function objekteErzeugen(){
+	var obj = new Date();
+	alert(obj.getDay());
+}
+//Array 1
+function arrayErzeugen1(){
+	var a2 = {
+		"name":"Meier",
+		"vorname":"Otto"
+	}
+	alert(a2.vorname);
+}
+//Array 2
+function arrayErzeugen2(){
+	var a3 = [1, 2, 3, 7, 9, 11];
+	alert(a3[2]);
+}
+```
+Bei der ersten Funktion kommt der Wochentag in eine Zahl an z.B. Donnerstag = 4.
+Bei der zweiten Funktion frage ich nach dem Wert von "vorname" also erscheint "Otto".
+Bei der dritten Funktion wird 3 asugegeben, weil der Index [] mit 0 beginnt zu zählen.
+Man greift in der Regel bei Objekten über die Dot Notation und bei den Arrays über die Array Notation.
