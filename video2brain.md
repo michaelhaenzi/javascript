@@ -181,7 +181,7 @@ function multiplizieren(a, b) {
 	alert(a*b);
 }
 ```
-***Lokale Variablen***
+**Lokale Variablen**
 
 Lokale Variablen sind Variablen, die nur in dem sogenannten Gültigkeitsbereich einer Funktion verwendung finden.
 
@@ -193,7 +193,7 @@ Funktionen können mithilfe von HTML-Grundstrukturen in einer Webseite aufgerufe
 ```
 Wenn man jetzt auf den Link mit dem Namen "Funktionsaufruf" drauf klicken würde, würde die Funktion "multiplizieren" 2 * 3 rechnen. Es wurde einen alert("") auftauchen mit genau dem Resultat also 6.
 
-***Eventhandler***
+**Eventhandler**
 
 In jeden auf der Webseite, sichtbares Element kann man einen Eventhandler notieren.
  Ein Eventhandler ist ein Attribut unter HTML das ein Ereignis beschreibt.
@@ -207,7 +207,7 @@ Eventhandler beginnen also mit "on" und beschreiben das Ereignis. Wenn der Mausz
 dann hiess der Eventhandler bei dem Bild "onmouseover". Würde er das Bilder wieder verlassen hiesse es "onmouseout".
 Oder sogar den Klick bei einer Maus: "onmousedown" und "onmouseup". Man kann sich also die Attribute wunderbar merken.
 
-***Rekursiver Aufruf***
+**Rekursiver Aufruf**
 
 Diese sind sogenannte Selbstaufrufe von Funktionen (Rekusive Aufrufe). Das heisst, in einer Funktion kann eine Funktion einer andere Aufrufen:
 ```js
@@ -230,10 +230,52 @@ Diese Art der Funktionsaufruf wird häufig bei Animationen gebraucht.
 
 ###Objekte
 
-***Was sind Objekte***
+**Was sind Objekte**
 
 Ein Objekt ist ein Gegenstand der realen Welt, ein greifbarer Gegenstand den man beschreiben kann.
-Ein Objekt hat demnach immer einen Befehl "Eigenschaften". Die Methoden eines Objektes sind aktive Schritte welche man mit einem Objekt macht oder ein Objekt erledigt. Sie sind Funktionen die an ein Objekt gebunden sind.
+Ein Objekt hat demnach immer einen Befehl "Eigenschaften".
 Zum Beispiel ein Papierkorb:
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![Alt text](P:\GEOINFO\Hilfereiche Daten\GitHub\JavaScript\Video2Brain\Objekt1.png)
+
+Die Methoden eines Objektes sind aktive Schritte welche man mit einem Objekt macht oder ein Objekt erledigt. Sie sind Funktionen die an ein Objekt gebunden sind.
+Hier wieder das Beispiel:
+
+![Alt text](P:\GEOINFO\Hilfereiche Daten\GitHub\JavaScript\Video2Brain\Objekt2.png)
+
+Vorher war der Papierkorb noch voll und hatte ein Icon, bei dem man sieht das er gefüllt  ist.
+Leert man ihn aber so wird das Icon und die Funktion "Papierkorb leeren" geändert. Die Funktion steht nichmeht zur Verfügung, weil der Zustand des Papierkorbes die Funktion nicht als sinnvoll erscheinen.
+
+Fazit: Ein Objekt ist eine Sammlung von Eigenschaften und Methoden und die Methoden können abhängig von einem Zustand verfügbar sein, oder auch nicht.
+
+**Wie erzeugt man jetzt ein neues Objekt?**
+
+Dazu muss man wissen was eine Klasse in JavaScirpt ist: Eine Klasse ist eine Zusammenfassung von mehreren Objekten und Methoden.
+Hierbei gibt es eine Syntax die mit einem Schlüsselwort "new" beginnt.
+Eine Standartklasse in JavaScirpt ist z.B. "Date". Also wird jetzt mithilfe
+eines Konstruktors aus einer Klasse (z.B. "Date") ein Objekt.
+```js
+funktion objekteErzeugen(){
+	var obj = new Date();
+}
+```
+Es gibt noch eine Methode, ausser der Konstruktor-Methode, Objekte zu erzeugen.
+Literal-Obejkte erzeugen:
+```js
+funktion objekteErzeugen(){
+	var text = "Ich bin auch ein Objekt";
+}
+```
+Also ist ein String (Zeichenkette) auch ein Objekt, da es auch eine Eigenschaft besitzt (Anzahl Zeichen).
+Obwohl man in JavaScript als Liteale dies versteht:
+```js
+funktion objekteErzeugen(){
+	var jsonobj = {
+		"name":"Otto"
+	};
+}
+```
+Hierbei bildet man Wertepaare: Den Schlüssel ("name") und dem dazugehörigen Wert ("Otto").
+Bei dieser Variante handelte es sich um Json (JavaScript Object Notation).
+
+###Arrays
