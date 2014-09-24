@@ -112,7 +112,7 @@ Im JavaScript verwendete „Nichts-Namen“:
 
 **Zuweisungs Operator**
 
-\= (gleichheitszeichen)
+= (gleichheitszeichen)
 
 
 ###Kontrollstrukturen
@@ -181,6 +181,10 @@ function multiplizieren(a, b) {
 	alert(a*b);
 }
 ```
+***Lokale Variablen***
+
+Lokale Variablen sind Variablen, die nur in dem sogenannten Gültigkeitsbereich einer Funktion verwendung finden.
+
 **Aufruf einer Funktion**
 
 Funktionen können mithilfe von HTML-Grundstrukturen in einer Webseite aufgerufen werden. Bedeutet: Man gibt einem Inline-/ Blockelement eine Funktion. Im obigen Beispiel haben wir Parameter mit a und b deklariert. Diese werden jetzt mit einem HTML-Link verküpft:
@@ -188,3 +192,48 @@ Funktionen können mithilfe von HTML-Grundstrukturen in einer Webseite aufgerufe
 <a href="javascript:multiplikation(2, 3)">Funktionsaufruf</a>
 ```
 Wenn man jetzt auf den Link mit dem Namen "Funktionsaufruf" drauf klicken würde, würde die Funktion "multiplizieren" 2 * 3 rechnen. Es wurde einen alert("") auftauchen mit genau dem Resultat also 6.
+
+***Eventhandler***
+
+In jeden auf der Webseite, sichtbares Element kann man einen Eventhandler notieren.
+ Ein Eventhandler ist ein Attribut unter HTML das ein Ereignis beschreibt.
+ Z.B. den Klick mit der Maus:
+```html
+<button onclick="funktion(parameter)">
+Buttonname
+</button>
+```
+Eventhandler beginnen also mit "on" und beschreiben das Ereignis. Wenn der Mauszeiger über ein Bild gehen würde,
+dann hiess der Eventhandler bei dem Bild "onmouseover". Würde er das Bilder wieder verlassen hiesse es "onmouseout".
+Oder sogar den Klick bei einer Maus: "onmousedown" und "onmouseup". Man kann sich also die Attribute wunderbar merken.
+
+***Rekursiver Aufruf***
+
+Diese sind sogenannte Selbstaufrufe von Funktionen (Rekusive Aufrufe). Das heisst, in einer Funktion kann eine Funktion einer andere Aufrufen:
+```js
+function berechneFakultaet(){
+	var a prompt("Geben sie eine Zahl ein");
+	alert('Das Ergebnis von ' + a + '! lautet: ' + fakultaetRekursiv(a));
+}
+function fakultaetRekursiv(n) {
+	if (n == 0) {
+		return 1;
+	} else {
+		return n * fakultaetRekursiv(n - 1);
+	}
+}
+```
+Mit der Funktion "berechneFakultaet()" nehmen wir eine Zahl des Benutzers entgegen (prompt("")) welche wir mit der Variable a gespeichert haben.
+Wir geben nun zuerst die eingegebne Zahl aus "a" und dann das Resultat der Funktion "fakultaetRekursiv(a)".
+In dieser Funktion wird sie jetzt wieder aufgerufen um "n" bei jedem Druchlauf um eins zu vermindern. Sonst gäbe es ja eine Endlosschlaufe.
+Diese Art der Funktionsaufruf wird häufig bei Animationen gebraucht.
+
+###Objekte
+
+***Was sind Objekte***
+
+Ein Objekt ist ein Gegenstand der realen Welt, ein greifbarer Gegenstand den man beschreiben kann.
+Ein Objekt hat demnach immer einen Befehl "Eigenschaften". Die Methoden eines Objektes sind aktive Schritte welche man mit einem Objekt macht oder ein Objekt erledigt. Sie sind Funktionen die an ein Objekt gebunden sind.
+Zum Beispiel ein Papierkorb:
+
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
