@@ -251,9 +251,11 @@ Fazit: Ein Objekt ist eine Sammlung von Eigenschaften und Methoden und die Metho
 **Wie erzeugt man jetzt ein neues Objekt?**
 
 Dazu muss man wissen was eine Klasse in JavaScirpt ist: Eine Klasse ist eine Zusammenfassung von mehreren Objekten und Methoden.
+Auch sogenannte "Bauvorschriften".
 Hierbei gibt es eine Syntax die mit einem Schlüsselwort "new" beginnt.
 Eine Standartklasse in JavaScirpt ist z.B. "Date". Also wird jetzt mithilfe
 eines Konstruktors aus einer Klasse (z.B. "Date") ein Objekt.
+
 ```js
 funktion objekteErzeugen(){
 	var obj = new Date();
@@ -328,3 +330,40 @@ Bei der ersten Funktion kommt der Wochentag in eine Zahl an z.B. Donnerstag = 4.
 Bei der zweiten Funktion frage ich nach dem Wert von "vorname" also erscheint "Otto".
 Bei der dritten Funktion wird 3 asugegeben, weil der Index [] mit 0 beginnt zu zählen.
 Man greift in der Regel bei Objekten über die Dot Notation und bei den Arrays über die Array Notation.
+
+**Klassenelemente**
+
+Wenn man mehrere Objekte mit gleichen Klassen hat, muss man keinen Konstruktor dafür benutzen.
+Man kann sie direkt in eine Funktion integrieren. Klassenelemente sind auch sogannte Konstanten. Da ihren Wert
+z.B. bei Pi, Logarythmus 10 usw., in den nächsten Jahren nicht verändert wird:
+```js
+function klassenElemente(){
+	Math.PI();
+	Math.random();
+}
+```
+
+###DOM-Konzept
+
+**Was ist das DOM-Konzept?**
+
+DOM (Document Objekt Model) ist ein Baumartigestruktur, mit Verzweigungen von Ästen (Knoten, engl. nodes) zu verstehen
+Es ist also eine spezifikation für eine Schnittstelle um einen Zugriff auf HTML-Dokumente zu gewehrleisten.
+Das DOM-Konzept finden sie auch bei FireBug.
+
+**DOM-Objekte**
+
+* window (Anzeigefenster, 'alert', 'confirm')
+* frame (Frame-Fenster)
+* document (Dokument im Anzeigefenster)
+* node (Alle Knoten des Elementenbaums)
+* style (CSS-Attribute von HTML-Elementen)
+* form (Formulare  im Dokument)
+* element (Formularelemente eines Formulars)
+* option (Optionen einer Auswahlliste eines Formulars)
+* image (Grafikreferenzen im Dokument)
+* event (Anwenderereignisse)
+* history (besuchte Seiten)
+* location (URLs)
+* navigator (Browser-Informationen)
+* screen (Bildschrim-Informationen)
