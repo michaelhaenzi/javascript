@@ -406,5 +406,3 @@ function infoBild1() {
 ```
 Wichtig ist hierbei das man mit .attribut so ziemlich alle Attribute von HTML anschreiben kann. Mit .innerHTML kann man alle Tags und Attribute in der HTML ansprechen.
 Das macht JavaScript so weitläufig und weiterführend.
-
-Hallo
