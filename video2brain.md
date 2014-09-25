@@ -195,9 +195,9 @@ Wenn man jetzt auf den Link mit dem Namen "Funktionsaufruf" drauf klicken würde
 
 **Eventhandler**
 
-In jeden auf der Webseite, sichtbares Element kann man einen Eventhandler notieren.
- Ein Eventhandler ist ein Attribut unter HTML das ein Ereignis beschreibt.
- Z.B. den Klick mit der Maus:
+Auf jeder Webseite, kann man in einem sichtbarem Element einen Eventhandler notieren.
+Ein Eventhandler ist ein Attribut unter HTML das ein Ereignis beschreibt.
+Z.B. den Klick mit der Maus:
 ```html
 <button onclick="funktion(parameter)">
 Buttonname
@@ -224,7 +224,7 @@ function fakultaetRekursiv(n) {
 }
 ```
 Mit der Funktion "berechneFakultaet()" nehmen wir eine Zahl des Benutzers entgegen (prompt("")) welche wir mit der Variable a gespeichert haben.
-Wir geben nun zuerst die eingegebne Zahl aus "a" und dann das Resultat der Funktion "fakultaetRekursiv(a)".
+Wir geben nun zuerst die eingegebne Zahl aus "a" und dann das Resultat der Funktion "fakultaetRekursiv(n)".
 In dieser Funktion wird sie jetzt wieder aufgerufen um "n" bei jedem Druchlauf um eins zu vermindern. Sonst gäbe es ja eine Endlosschlaufe.
 Diese Art der Funktionsaufruf wird häufig bei Animationen gebraucht.
 
@@ -243,8 +243,8 @@ Hier wieder das Beispiel:
 
 ![Alt text](P:\GEOINFO\Hilfereiche Daten\GitHub\JavaScript\Video2Brain\Objekt2.png)
 
-Vorher war der Papierkorb noch voll und hatte ein Icon, bei dem man sieht das er gefüllt  ist.
-Leert man ihn aber so wird das Icon und die Funktion "Papierkorb leeren" geändert. Die Funktion steht nichmeht zur Verfügung, weil der Zustand des Papierkorbes die Funktion nicht als sinnvoll erscheinen.
+Vorher war der Papierkorb noch voll und hatte ein Icon, bei dem man sieht das er gefüllt ist.
+Leert man ihn aber so wird das Icon und die Funktion "Papierkorb leeren" geändert. Die Funktion steht nichmeht zur Verfügung, weil der Zustand des Papierkorbes, die Funktion nicht als sinnvoll erscheit.
 
 Fazit: Ein Objekt ist eine Sammlung von Eigenschaften und Methoden und die Methoden können abhängig von einem Zustand verfügbar sein, oder auch nicht.
 
@@ -282,7 +282,7 @@ Bei dieser Variante handelte es sich um Json (JavaScript Object Notation).
 
 **Arrays**
 
-Arrays und Objekte sind in JavaScript "so gut wie das gleich". Es ist eine Sammlung von Werten die über einen Bezeichner und ein Index zur verfügung gestellt.
+Arrays und Objekte sind in JavaScript "so gut wie das gleiche". Es ist eine Sammlung von Werten die über einen Bezeichner und ein Index zur verfügung gestellt werden.
 In JavaScript sollte man Objekte als Arrays und Arrays als Objekte sehen.
 Es gibt 3 Varianten einen Array zu erzeugen:
 
@@ -347,7 +347,7 @@ function klassenElemente(){
 
 **Was ist das DOM-Konzept?**
 
-DOM (Document Objekt Model) ist ein Baumartigestruktur, mit Verzweigungen von Ästen (Knoten, engl. nodes) zu verstehen
+DOM (Document Objekt Model) ist ein Baumartigestruktur, mit Verzweigungen von Ästen (Knoten, engl. nodes) zu verstehen.
 Es ist also eine spezifikation für eine Schnittstelle um einen Zugriff auf HTML-Dokumente zu gewehrleisten.
 Das DOM-Konzept finden sie auch bei FireBug.
 
@@ -404,3 +404,5 @@ function infoBild1() {
 	document.getElementById("bild1info").innerHTML = document.getElementById("b1").height;
 }
 ```
+Wichtig ist hierbei das man mit .attribut so ziemlich alle Attribute von HTML anschreiben kann. Mit .innerHTML kann man alle Tags und Attribute in der HTML ansprechen.
+Das macht JavaScript so weitläufig und weiterführend.
