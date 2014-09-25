@@ -406,3 +406,38 @@ function infoBild1() {
 ```
 Wichtig ist hierbei das man mit .attribut so ziemlich alle Attribute von HTML anschreiben kann. Mit .innerHTML kann man alle Tags und Attribute in der HTML ansprechen.
 Das macht JavaScript so weitläufig und weiterführend.
+
+**Funktionsreferenzen und anonyme Funktionen**
+
+Statt Befehle direkt in ein HTML-Dokument einzubinden, verwendet man es wie bei einer exterenen CSS-Datei.
+
+```js
+function init() {
+	document.getElementById("b1").onmouseover = function() {
+		document.getElementById("b1").width += 20;
+	}
+}
+window.onload=init;
+```
+Das ist eine anonyme Funktion, weil sie keinen Namen hat doch ist sie ansprechbar durch die Id ihres Elementes.
+Damit diese DOM-Elemente überhaupt funktionieren, müssen sie erst nach dem laden der Seite aktiv werden.
+Dafür gibt es einen Zeiger, eine Funktionsreferenz (windows.onload=init;).
+
+**DHTML**
+
+DHTML steht für Dynamic Hypertext Markup Language.
+DHTML grenzt an Animationen an, man kann sie mit oder ohne JavaScript schreiben. Sie sind für kleinere "Animationen" gedacht z.B. das vergrössern und verkleinern eines Textes.
+
+**Animationen**
+
+Typisch für Animationen sind kleine, grosse oder sogar spektakuläre Animationen. Hier ein kleines Beispiel:
+```js
+function animation() {
+	if (document.getElementsByTagName("img")[0]. width++ < 300).setTimeout('animation()', '1');
+}
+window.onload = function() {
+	document.getElementsByTagName("button")[0].onlick = animation;
+}
+```
+Hierbei vergrössert sich das erste Bild mit dem Tag "img" immer um 1 Pixel bis zu maximal 300px.. Hierbei ist dieses .setTimeout wichitg anzusehen.
+Denn es macht nach jedem "Vergrössern", 1 Millisekunde Pause. Wir sehen diese Pausen nicht, daher erscheint das ganze flüssig.
