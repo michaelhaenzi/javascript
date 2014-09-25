@@ -353,17 +353,54 @@ Das DOM-Konzept finden sie auch bei FireBug.
 
 **DOM-Objekte**
 
-* window (Anzeigefenster, 'alert', 'confirm')
-* frame (Frame-Fenster)
-* document (Dokument im Anzeigefenster)
-* node (Alle Knoten des Elementenbaums)
-* style (CSS-Attribute von HTML-Elementen)
-* form (Formulare  im Dokument)
-* element (Formularelemente eines Formulars)
-* option (Optionen einer Auswahlliste eines Formulars)
-* image (Grafikreferenzen im Dokument)
-* event (Anwenderereignisse)
-* history (besuchte Seiten)
-* location (URLs)
-* navigator (Browser-Informationen)
-* screen (Bildschrim-Informationen)
+* **window** (Anzeigefenster, 'alert', 'confirm')
+* **frame** (Frame-Fenster)
+* **document** (Dokument im Anzeigefenster)
+* **node** (Alle Knoten des Elementenbaums)
+* **style** (CSS-Attribute von HTML-Elementen)
+* **form** (Formulare  im Dokument)
+* **element** (Formularelemente eines Formulars)
+* **option** (Optionen einer Auswahlliste eines Formulars)
+* **image** (Grafikreferenzen im Dokument)
+* **event** (Anwenderereignisse)
+* **history** (besuchte Seiten)
+* **location** (URLs)
+* **navigator** (Browser-Informationen)
+* **screen** (Bildschrim-Informationen)
+
+**Zugriffsmöglichkeiten auf DOM-Elemente**
+
+Es gibt hauptsächlich zwei wichtige Zurgriffsmöglichkeiten auf Webseiten:
+
+```js
+function zugriff1() {
+	//befehl(Dom-Objekt.Zugriffsbefehl("Tag")[Index].Eigenschaft)
+
+	alert(document.getElementsByTagName("img")[0].src)
+}
+function zugriff2() {
+	//befehl(Dom-Objekt.Zugriffsbefehl("Id").Eigenschaft)
+
+	alert(document.getElementById("bild1").src)
+}
+```
+Es gibt noch viele weitere Möglichkeiten auf Elemente zu zugreifen, die meisten sind aber veraltet und funktionieren nicht bei manchen Elementen.
+Die 2 wichtigsten Zugriffsmöglichkeiten sind also über:
+* **getElementsByTagName**
+* **getElementById**
+
+**Wichtigsten Aktionen der DOM-Elementen**
+
+Im HTML-Dokument:
+```html
+<img src="images/b1.jpg" alt="Aus der Luft" name="bild1" id="b1" onmouseover="groesser()" onclick="infoBild1()"/>
+```
+Im JavaScript-Dokument:
+```js
+function groesser() {
+	document.getElementById("b1").width += 20;
+}
+function infoBild1() {
+	document.getElementById("bild1info").innerHTML = document.getElementById("b1").height;
+}
+```
