@@ -433,7 +433,7 @@ DHTML grenzt an Animationen an, man kann sie mit oder ohne JavaScript schreiben.
 Typisch für Animationen sind kleine, grosse oder sogar spektakuläre Animationen. Hier ein kleines Beispiel:
 ```js
 function animation() {
-	if (document.getElementsByTagName("img")[0]. width++ < 300).setTimeout('animation()', '1');
+	if (document.getElementsByTagName("img")[0].width++ < 300).setTimeout('animation()', '1');
 }
 window.onload = function() {
 	document.getElementsByTagName("button")[0].onlick = animation;
