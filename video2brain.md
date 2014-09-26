@@ -73,7 +73,7 @@ Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und nu
 
 **Arithmetische Operatoren**
 
-\+ (addieren, stringverkettung)
+\+ (addieren, Stringverkettung)
 
 \- (subtrahieren)
 
@@ -81,11 +81,11 @@ Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und nu
 
 / (dividieren)
 
-% (modulo)
+% (Modulo)
 
-\++ (inkrement)
+\++ (Inkrement)
 
-\-- (dekrement)
+\-- (Dekrement)
 
 
 **Vergleichs Operatoren**
@@ -98,16 +98,16 @@ Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und nu
 
 \> (grösser als)
 
-<= (kleiner und gleich als)
+<= (kleiner oder gleich als)
 
-\>= (grösser und gleich als)
+\>= (grösser oder gleich als)
 
 === (Abfrage auf gleichen Wert und Art des Wertes)
 
 
 **Zuweisungs Operator**
 
-= (gleichheitszeichen)
+= (Gleichheitszeichen)
 
 
 ###Kontrollstrukturen
@@ -120,7 +120,7 @@ var a = 5;
 if(a < 6){
 			//Block A
 } else {
- 			//Block B
+			//Block B
 }
 ```
 
@@ -134,23 +134,23 @@ Mit Schleifen hat man die Möglichkeit Anweisungsblöcke zu wiederholen, diese B
 
 ```js
 for (i = 0; i < 10; i++) {
-		/* Diese Schleife startet bei i=0,
-    	 sie führt den Block einmal aus und erhöht i um eins (i++)
-			 Dies wird so oft getan, bis i nicht mehr kleiner ist als 10 (i < 10) */
+	// Diese Schleife startet bei i=0,
+	// sie führt den Block einmal aus und erhöht i um eins (i++)
+	// Dies wird so oft getan, bis i nicht mehr kleiner ist als 10 (i < 10)
 }
 
 
 while (i >= 10) {
-	i++
+	i++;
 	// Diese Schleife wird solange auzgeführt, wie i<=10 ist
 }
 
 
 do {
-	i++
-	/* Diese Schleife wird mindestens einmal ausgeführt,
-     danach wird die Bedingung geprüft, ist diese true (wahr),
-     so wird der Block erneut ausgeführt. */
+	i++;
+	// Diese Schleife wird mindestens einmal ausgeführt,
+	// danach wird die Bedingung geprüft, ist diese true (wahr),
+	// so wird der Block erneut ausgeführt.
 }
 while (i >= 10)
 ```
@@ -158,7 +158,7 @@ while (i >= 10)
 
 **Sprunganweisung**
 
-In bestimmten Situationen möchte man aus Schleifen früher raus. Also brauch man so genannte Sprunganweisungen:
+In bestimmten Situationen möchte man aus Schleifen früher raus. Daher brauch man so genannte Sprunganweisungen:
 * break; (bricht die Schleife ab)
 * continue; (bricht den derzeitigen Durchlauf ab und geht mit dem nächsten Druchlauf weiter)
 * return x; (liefert einen Rückgabe Wert an die aufrufende Funktion. Somit wird die aktuelle Funktion beendet.)
@@ -186,7 +186,7 @@ Lokale Variablen sind Variablen, die nur in dem sogenannten Gültigkeitsbereich 
 
 **Aufruf einer Funktion**
 
-Funktionen können mithilfe von HTML-Grundstrukturen in einer Webseite aufgerufen werden. Bedeutet: Man gibt einem Inline-/ Blockelement eine Funktion. Im obigen Beispiel haben wir Parameter mit a und b deklariert. Diese werden jetzt mit einem HTML-Link verküpft:
+Funktionen können mithilfe von HTML-Grundstrukturen in einer Webseite aufgerufen werden. Bedeutet: Man gibt einem Inline-/ Blockelement eine Funktion. Im Beispiel weiter oben haben wir Parameter mit a und b weitergegeben. Diese werden jetzt mit einem HTML-Link verküpft:
 ```html
 <a href="javascript:multiplikation(2, 3)">Funktionsaufruf</a>
 ```
@@ -196,19 +196,19 @@ Wenn man jetzt auf den Link mit dem Namen "Funktionsaufruf" drauf klicken würde
 
 Auf jeder Webseite, kann man in einem sichtbarem Element einen Eventhandler notieren.
 Ein Eventhandler ist ein Attribut unter HTML das ein Ereignis beschreibt.
-Z.B. den Klick mit der Maus:
+Zum Beispiel den Klick mit der Maus:
 ```html
 <button onclick="funktion(parameter)">
 Buttonname
 </button>
 ```
 Eventhandler beginnen also mit "on" und beschreiben das Ereignis. Wenn der Mauszeiger über ein Bild gehen würde,
-dann hiess der Eventhandler bei dem Bild "onmouseover". Würde er das Bilder wieder verlassen hiesse es "onmouseout".
+dann hiess der Eventhandler bei dem Bild "onmouseover". Würde der Cursor das Bilder wieder verlassen, so hiesse es "onmouseout".
 Oder sogar den Klick bei einer Maus: "onmousedown" und "onmouseup". Man kann sich also die Attribute wunderbar merken.
 
 **Rekursiver Aufruf**
 
-Diese sind sogenannte Selbstaufrufe von Funktionen (Rekusive Aufrufe). Das heisst, in einer Funktion kann eine Funktion einer andere Aufrufen:
+Diese sind sogenannte Selbstaufrufe von Funktionen (Rekusive Aufrufe). Das heisst also, dass in einer Funktion die gleiche Funktion aufgeruft werden kann:
 ```js
 function berechneFakultaet(){
 	var a prompt("Geben sie eine Zahl ein");
@@ -222,9 +222,9 @@ function fakultaetRekursiv(n) {
 	}
 }
 ```
-Mit der Funktion "berechneFakultaet()" nehmen wir eine Zahl des Benutzers entgegen (prompt("")) welche wir mit der Variable a gespeichert haben.
-Wir geben nun zuerst die eingegebne Zahl aus "a" und dann das Resultat der Funktion "fakultaetRekursiv(n)".
-In dieser Funktion wird sie jetzt wieder aufgerufen um "n" bei jedem Druchlauf um eins zu vermindern. Sonst gäbe es ja eine Endlosschlaufe.
+Mit der Funktion "berechneFakultaet()" nehmen wir eine Zahl des Clients entgegen - `prompt(" ")` - welche wir mit der Variable `a` gespeichert haben.
+Wir geben nun zuerst die eingegebne Zahl `a` aus und dann das Resultat der Funktion `fakultaetRekursiv(n)`.
+In dieser Funktion wird sie jetzt wieder aufgerufen um `n` bei jedem Druchlauf um eins zu vermindern. Sonst gäbe es ja eine Endlosschlaufe.
 Diese Art der Funktionsaufruf wird häufig bei Animationen gebraucht.
 
 ###Objekte
@@ -232,8 +232,8 @@ Diese Art der Funktionsaufruf wird häufig bei Animationen gebraucht.
 **Was sind Objekte**
 
 Ein Objekt ist ein Gegenstand der realen Welt, ein greifbarer Gegenstand den man beschreiben kann.
-Ein Objekt hat demnach immer einen Befehl "Eigenschaften".
-Zum Beispiel ein Papierkorb:
+Ein Objekte hat demnach immer "Eigenschaften".
+Beispiel am Papierkorb:
 
 ![Alt text](Objekt1.png)
 
@@ -250,9 +250,9 @@ Leert man ihn aber so wird die Funktion "Papierkorb leeren" aufgerufen, welche d
 **Wie erzeugt man jetzt ein neues Objekt?**
 
 Dazu muss man wissen was eine Klasse ist: Eine Klasse ist eine Zusammenfassung von mehreren Objekten und Methoden.
-Hierbei gibt es eine Syntax die mit einem Schlüsselwort "new" beginnt.
-Eine Standartklasse in JavaScirpt ist z.B. "Date". Also wird jetzt mithilfe
-eines Konstruktors aus einer Klasse (z.B. "Date") ein Objekt (eine Instanz dieser Klasse) erzeugt.
+Hierbei gibt es eine Syntax die mit einem Schlüsselwort `new` beginnt.
+Eine Standartklasse in JavaScirpt ist z.B. `Date`. Also wird jetzt mithilfe
+eines Konstruktors aus einer Klasse (z.B. 'Date') ein Objekt (eine Instanz dieser Klasse) erzeugt.
 Man könnte sie auch mit einer "Bauvorschrift" vergleichen.
 
 ```js
@@ -276,7 +276,7 @@ funktion objekteErzeugen(){
 	};
 }
 ```
-Hierbei bildet man Wertepaare: Den Schlüssel ("name") und dem dazugehörigen Wert ("Otto").
+Hierbei bildet man Wertepaare: Den Schlüssel (`name`) und dem dazugehörigen Wert (`Otto`).
 Bei dieser Variante handelte es sich um Json (JavaScript Object Notation).
 
 **Arrays**
@@ -285,9 +285,9 @@ Arrays und Objekte sind in JavaScript "so gut wie das gleiche". Es ist eine Samm
 In JavaScript sollte man Objekte als Arrays und Arrays als Objekte sehen.
 Es gibt 3 Varianten einen Array zu erzeugen:
 
-* Mithilfe der Konstruktor-Methode (var a1)
-* Json Notation (var a2)
-* Literale Form (var a3)
+* Mithilfe der Konstruktor-Methode (`var a1`)
+* Json Notation (`var a2`)
+* Literale Form (`var a3`)
 
 ```js
 funktion arraysErzeugen(){
@@ -303,7 +303,7 @@ funktion arraysErzeugen(){
 **Dot and Array Notation**
 
 Unter Dot Notation versteht man das Zugreifen auf ein/en Objekt oder Array.
-Das geschiet - wie der name schon sagt - mit einem dot, also Punkt (.).
+Das geschiet - wie der name schon sagt - mit einem dot, also Punkt (`.`).
 Sieht wie folgt aus:
 ```js
 //Objekt
@@ -311,6 +311,7 @@ function objekteErzeugen(){
 	var obj = new Date();
 	alert(obj.getDay());
 }
+
 //Array 1
 function arrayErzeugen1(){
 	var a2 = {
@@ -319,6 +320,7 @@ function arrayErzeugen1(){
 	}
 	alert(a2.vorname);
 }
+
 //Array 2
 function arrayErzeugen2(){
 	var a3 = [1, 2, 3, 7, 9, 11];
@@ -326,15 +328,15 @@ function arrayErzeugen2(){
 }
 ```
 Bei der ersten Funktion kommt der Wochentag in eine Zahl an z.B. Donnerstag = 4.
-Bei der zweiten Funktion frage ich nach dem Wert von "vorname" also erscheint "Otto".
-Bei der dritten Funktion wird 3 asugegeben, weil der Index [] mit 0 beginnt zu zählen.
+Bei der zweiten Funktion frage ich nach dem Wert von `vorname` also erscheint `Otto`.
+Bei der dritten Funktion wird 3 ausgegeben, weil der Index `[ ]` mit 0 beginnt zu zählen.
 Man greift in der Regel bei Objekten über die Dot Notation und bei den Arrays über die Array Notation.
 
 **Klassenelemente**
 
 Wenn man mehrere Objekte mit gleichen Klassen hat, muss man keinen Konstruktor dafür benutzen.
 Man kann sie direkt in eine Funktion integrieren. Klassenelemente sind auch sogannte Konstanten. Da ihren Wert
-z.B. bei Pi, Logarythmus 10 usw., in den nächsten Jahren nicht verändert wird:
+z.B. wie bei Pi und Logarythmus 10, in den nächsten Jahren nicht verändert wird:
 ```js
 function klassenElemente(){
 	Math.PI();
@@ -352,7 +354,7 @@ Es ist also eine spezifikation für eine Schnittstelle um einen Zugriff auf HTML
 
 **DOM-Objekte**
 
-* **window** (Anzeigefenster, 'alert', 'confirm')
+* **window** (Anzeigefenster, `alert`, `confirm`)
 * **frame** (Frame-Fenster)
 * **document** (Dokument im Anzeigefenster)
 * **node** (Alle Knoten des Elementenbaums)
@@ -384,10 +386,10 @@ function zugriff2() {
 }
 ```
 Es gibt noch viele weitere Möglichkeiten auf Elemente zu zugreifen, die meisten sind aber veraltet und funktionieren nicht bei manchen Elementen.
-Die 2 wichtigsten Zugriffsmöglichkeiten sind also über:
+Die zwei wichtigsten Zugriffsmöglichkeiten sind also über:
 
-* **getElementsByTagName**
-* **getElementById**
+* `getElementsByTagName`
+* `getElementById`
 
 **Wichtigsten Aktionen der DOM-Elementen**
 
@@ -404,12 +406,12 @@ function infoBild1() {
 	document.getElementById("bild1info").innerHTML = document.getElementById("b1").height;
 }
 ```
-Wichtig ist hierbei das man mit .attribut so ziemlich alle Attribute von HTML anschreiben kann. Mit .innerHTML kann man  - wie der name schon sagt -  alle inneren Strukturen einer HTML neu bestimmen.
+Wichtig ist hierbei das man mit .attribut fast alle Attribute von HTML anschreiben kann. Mit .innerHTML kann man  - wie der name schon sagt -  alle inneren Strukturen einer HTML-Datei löschen, ändern undneu bestimmen.
 Das macht JavaScript so weitläufig und weiterführend.
 
 **Funktionsreferenzen und anonyme Funktionen**
 
-Statt Befehle direkt in ein HTML-Dokument einzubinden, verwendet man eine exterenen JS-Datei.
+Statt Befehle direkt in ein HTML-Dokument einzubinden, verwendet man eine exterene JS-Datei.
 
 ```js
 function init() {
@@ -419,18 +421,18 @@ function init() {
 }
 window.onload=init;
 ```
-Das ist eine anonyme Funktion, weil sie keinen Namen hat doch ist sie ansprechbar durch die Id ihres Elementes.
-Damit diese DOM-Elemente überhaupt funktionieren, müssen sie erst nach dem laden der Seite aktiv werden.
-Dafür gibt es einen Zeiger (windows.onload=init;).
+Das ist eine anonyme Funktion, weil sie keinen Funktions Namen hat. Doch ist sie ansprechbar durch die Id ihres Elementes.
+Damit dieses DOM-Element überhaupt funktionieren, müssen sie erst nach dem laden der Seite aktiv werden.
+Dafür gibt es einen Zeiger (`windows.onload=init;`).
 
 **DHTML**
 
-DHTML steht für Dynamic Hypertext Markup Language.
-DHTML grenzt an Animationen an, man kann sie mit oder ohne JavaScript schreiben. Sie sind für kleinere "Animationen" gedacht z.B. das vergrössern und verkleinern eines Textes.
+DHTML steht für 'Dynamic Hypertext Markup Language'.
+DHTML grenzt an Animationen an, sie sind für kleinere "Animationen" gedacht. Wie etwa das vergrössern und verkleinern eines Textes. Man kann sie mit oder ohne JavaScript schreiben.
 
 **Animationen**
 
-Typisch für Animationen sind kleine, grosse oder sogar spektakuläre Animationen. Hier ein kleines Beispiel:
+Typisch für Animationen sind kleine, grosse oder sogar fazinierende Animationen. Hier wieder ein Beispiel dazu:
 ```js
 function animation() {
 	if (document.getElementsByTagName("img")[0].width++ < 300).setTimeout('animation()', '1');
@@ -439,13 +441,12 @@ window.onload = function() {
 	document.getElementsByTagName("button")[0].onlick = animation;
 }
 ```
-Hierbei vergrössert sich das erste Bild mit dem Tag "img" immer um 1 Pixel bis zu maximal 300px.. Hierbei ist dieses .setTimeout wichitg anzusehen.
+Hierbei vergrössert sich das erste Bild mit dem Tag `img` immer um 1 Pixel bis zu maximal 300px. Hierbei ist dieses `.setTimeout` wichitg anzusehen.
 Denn es macht nach jedem "Vergrössern", 1 Millisekunde Pause. Wir sehen diese Pausen nicht, daher erscheint das ganze flüssig.
 
-
-***Wo kann ich diese Informationen finden?***
-
-*Hier ist ein explizieter JavaScript Crashkurs für Anfänger: [Video2Brain JavaScript](https://www.video2brain.com/de/videotraining/javascript-crashkurs-2012)*
+<br />
+*Quelle:
+[Video2Brain, JavaScript Crashkurs](https://www.video2brain.com/de/videotraining/javascript-crashkurs-2012)*
 
 <br />
 ```
