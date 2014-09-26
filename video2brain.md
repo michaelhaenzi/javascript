@@ -451,6 +451,16 @@ window.onload = function() {
 Hierbei vergrössert sich das erste Bild mit dem Tag `img` immer um 1 Pixel bis zu maximal 300px. Hierbei ist dieses `.setTimeout` wichitg anzusehen.
 Denn es macht nach jedem "Vergrössern", 1 Millisekunde Pause. Wir sehen diese Pausen nicht, daher erscheint das ganze flüssig.
 
+**Ajax**
+
+Mit JavaScirpt, Daten vom Server nachgefordert werden, die dann mit DHTML in die Webseite eingebaut werden.
+Dabei bleibt die bereits geladene Seite vorhanden. Hierfür braucht man eine implementierte Bibliotheke von jQuery.
+Einbinden in die HTML-Datei:
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript">
+</script>
+```
+
 <br />
 *Quelle:
 [Video2Brain, JavaScript Crashkurs](https://www.video2brain.com/de/videotraining/javascript-crashkurs-2012)*
