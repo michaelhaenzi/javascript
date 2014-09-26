@@ -1,13 +1,11 @@
 Video2Brain JavaScript
 ======================
 
-###Wo kann ich diese Videos finden?
-
-Hier ist ein explizieter JavaScript Crashkurs für Anfänger: [Video2Brain JavaScript](https://www.video2brain.com/de/videotraining/javascript-crashkurs-2012)
 
 ###Was ist JavaScript überhaupt?
 
-Es dient der Aufbereitung von Daten über einen Server. JavaScript gestattet dynamische Aktionen auf einem Webserver. JS ist auf fast allen modernen und neueren Seiten aufzufinden.
+JavaScript ist eine Programmiersprache die häufig im Clientbereich, das heisst beim Benutzer einer Website oder Webapp eingesetzt wird. JavaScript wird aber immer öfter auch als Backendsprache verwendet.
+Es dient der Aufbereitung von Daten über einen Server. JavaScript gestattet dynamische Aktionen auf einer Webseite. JS ist auf fast allen modernen und neueren Seiten aufzufinden.
 
 ###Wo wird JavaScript konkret eingesetzt?
 
@@ -24,18 +22,17 @@ Webseiten bei denen solche Funktionen genutzt werden:
 
 ###Was braucht es um JavaScript anzuwenden?
 
-Man sollte einige Grundkenntnisse von HTML und CSS haben. Denn ohne diesen 3er Bund wirkt es steif, langweilig und uninteressant.
+Um JavaScript anzuwenden sollte man sich bereits mit HTML und CSS auskennen. Denn JavaScript wird dazu verwendet eine Website dynamisch zu gestalten. Man kann bereits mit HTML und CSS eine sehr gute Website realisieren, für richtig komplexe Funbktionalitäten kommt man aber nicht um JavaScript herum.
 Erforderliche Programme:
-Man sollte einen IDE (integrated development environment) besitzen. Da gibt es einige sehr gute im Angebot, wie z.B.: Aptana Studio oder Visual Studio Web Developer.
-Neben einem IDE sollte man verschiedene Browser gedownloadet haben. Da man Funktionalität auf den meist genutzten Browsern Test bevor man es öffentlich macht. Dabei eignet sich ganz gut: Firefox, Google Chrome, Internet Explorer, Opera und Safari.
+Zum Erstellen einer einfachen Website genügt ein Editor wie Sublime oder Atom. Doch um auch Visual Studio oder Aptana Studio sind dafür geeignet. Natürlich will man seine Websites auch auf Aussehen und Funktionalität testen können und sollte daher einen oder mehrere Browser installiert haben.
 
 ###Firebug, was ist das?
 
-„Firebug“ ist ein Addon was man im Firefox Browser sich gratis downloaden kann. Es hilft Entwicklern effektiv die Hintergründe der Webseite zu sehen und zu testen. Allgemein empfiehlt sich bei Firefox mit Firebug zu arbeiten.
+Firebug ist ein Addon für den Firefox Browser. Es ist ein Tool welches erlaubt die Console zu lesen und den Quellcode der Website einzusehen. Man sollte es sicherlich installieren wenn man diesen Browser bevorzugt.
 
 ###Wie fügt man nun ein JavaScript Skript in eine HTML-Seite ein?
 
-Im Grunde ganz einfach, wie bei CSS. Es gibt 3 Arten beim Einbinden von JS. Durch eine Inline-Referenz, Skript-Container und Externe-Referenz. Diese 3 Arten werden hier ganz kurz erklärt:
+Es gibt 3 Arten beim Einbinden von JS. Durch eine Inline-Referenz, Skript-Container und Externe-Referenz. Diese 3 Arten werden hier ganz kurz erklärt:
 
 | **Einbindungs-Art** | Beschreiung und Quellcode |
 | ------------------------ | ------------------- |
@@ -47,33 +44,30 @@ Im Grunde ganz einfach, wie bei CSS. Es gibt 3 Arten beim Einbinden von JS. Durc
 | Quellcode | ```<script src="javascript.js"></script> ``` |
 
 
-###Datentypen in JavaScript
+###Die Variable `var`
 
-Es gibt nur 4 Datentypen:
+Man benutzt für eine neue Variable einfach das Schlüsselwort `var`. Dieses  Schlüsselwort kann folgende "Wertarten" haben:
+
 * **number** (Nummer: Ganze Zahlen und Kommazahlen)
 * **string** (Text)
 * **boolean** (True or False)
 * **object** (Neues Objekt einfügen)
 
-Diese Einteilung ist sehr weitläufig und daher auch sehr schlüpferig. Es gibt noch einen schöneren weg der Deklaration, das ist:
+Eine einfache Deklaration in JavaScript:
 ```js
 var variabelnname = number, string, boolish oder object
 ```
 
-Zudem ist 'var' (variable) eine nur interne Funktion.
+**Undefined, not defined, null und NaN**
 
-###Undefined, not defined, null und NaN
+Wenn man versucht eine Operation mit keinen Zahl Variablen auszugeben, dann kommt 'NaN', was ausgeschrieben 'NotaNumber' bedeutet.
+Wenn man einer Variable in JavaScirpt keinen wert zuteilt, also z.B.: `var a;`, dann ist die Variable `a`  nicht definiert 'undefined'. Welches einen eigenen Funktionsnamen in JavaScript darstellt.
+Da gibt es noch 'null' und 'null' bedeutet leer.
+Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und null defierniert hat.
 
-Wenn man einem Variablennamen in js nichts zuteilt, also z.B.:
-```js
-var a;
-```
-dann ist 'a' definiert als 'undefined' welches eine eigene Funktionsnamen in JavaScript ist. Wenn man aber eine Variable ausgeben will ohne dass man sie vorher zugeteilt hat, dann gibt es einen Script-Fehler. Dann gibt es noch eine anderen Funktionsnamen ‚null‘ welcher bei der Kontrolle gibt. Wenn man versucht eine Operation von 2 Texten oder keinen Zahlen-Variablen ausgibt. Dann kommt ‚NaN‘ = ‚NotaNumber‘.
-
-Im JavaScript verwendete „Nichts-Namen“:
-* **NaN**
-* **undefined**
-* **null**
+* NaN
+* undefined
+* null
 
 ###Operationen/ Operatoren
 
@@ -93,6 +87,7 @@ Im JavaScript verwendete „Nichts-Namen“:
 
 \-- (dekrement)
 
+
 **Vergleichs Operatoren**
 
 == (wenn beiden gleich)
@@ -107,7 +102,7 @@ Im JavaScript verwendete „Nichts-Namen“:
 
 \>= (grösser und gleich als)
 
-=== (abfrage auf gleichen Datentypen)
+=== (Abfrage auf gleichen Wert und Art des Wertes)
 
 
 **Zuweisungs Operator**
@@ -119,19 +114,19 @@ Im JavaScript verwendete „Nichts-Namen“:
 
 **Entscheidungsfindung**
 
-Man gibt hinter dem if und else einen Vergleichswert. Wenn es true (wahr) ist dann führt er das was in geschweiften Klammer ist aus.
+Man gibt in den Klammern nach dem if eine Bedingung an die geprüft werden soll. Ist diese true (wahr) so wird der `Block A` ausgeführt, ist sie false (unwahr) so wird der `Block B` ausgeführt.
 ```js
 var a = 5;
 if(a < 6){
-
+			//Block A
 } else {
-
+ 			//Block B
 }
 ```
 
 **Schleifen**
 
-Mit schleifen wiederholt man Anweisungen die in den geschweiften Klammern stehen. In den runden Klammen bestimmen wir wie lange der durch sein sollte. Es gibt 3 Arten von Schleifen:
+Mit Schleifen hat man die Möglichkeit Anweisungsblöcke zu wiederholen, diese Blöcke werden in geschweiften Klammern definiert. In den runden Klammern steht die Bedingung zu welcher dieser Block ausgeführt werden kann. Es gibt 3 Arten von Schleifen:
 
 * For-Schleife
 * While-Schleife
@@ -139,21 +134,25 @@ Mit schleifen wiederholt man Anweisungen die in den geschweiften Klammern stehen
 
 ```js
 for (i = 0; i < 10; i++) {
-
+		/* Diese Schleife startet bei i=0,
+    	 sie führt den Block einmal aus und erhöht i um eins (i++)
+			 Dies wird so oft getan, bis i nicht mehr kleiner ist als 10 (i < 10) */
 }
-```
-```js
+
+
 while (i >= 10) {
 	i++
+	// Diese Schleife wird solange auzgeführt, wie i<=10 ist
 }
-```
-```js
+
+
 do {
 	i++
+	/* Diese Schleife wird mindestens einmal ausgeführt,
+     danach wird die Bedingung geprüft, ist diese true (wahr),
+     so wird der Block erneut ausgeführt. */
 }
-while (i >= 10) {
-
-}
+while (i >= 10)
 ```
 
 
@@ -162,7 +161,7 @@ while (i >= 10) {
 In bestimmten Situationen möchte man aus Schleifen früher raus. Also brauch man so genannte Sprunganweisungen:
 * break; (bricht die Schleife ab)
 * continue; (bricht den derzeitigen Durchlauf ab und geht mit dem nächsten Druchlauf weiter)
-* return x; (liefert einen Rückgabe Wert)
+* return x; (liefert einen Rückgabe Wert an die aufrufende Funktion. Somit wird die aktuelle Funktion beendet.)
 
 ###Funktion
 
@@ -236,25 +235,25 @@ Ein Objekt ist ein Gegenstand der realen Welt, ein greifbarer Gegenstand den man
 Ein Objekt hat demnach immer einen Befehl "Eigenschaften".
 Zum Beispiel ein Papierkorb:
 
-![Alt text](P:\GEOINFO\Hilfereiche Daten\GitHub\JavaScript\Video2Brain\Objekt1.png)
+![Alt text](Objekt1.png)
 
 Die Methoden eines Objektes sind aktive Schritte welche man mit einem Objekt macht oder ein Objekt erledigt. Sie sind Funktionen die an ein Objekt gebunden sind.
 Hier wieder das Beispiel:
 
-![Alt text](P:\GEOINFO\Hilfereiche Daten\GitHub\JavaScript\Video2Brain\Objekt2.png)
+![Alt text](Objekt2.png)
 
 Vorher war der Papierkorb noch voll und hatte ein Icon, bei dem man sieht das er gefüllt ist.
-Leert man ihn aber so wird das Icon und die Funktion "Papierkorb leeren" geändert. Die Funktion steht nichmeht zur Verfügung, weil der Zustand des Papierkorbes, die Funktion nicht als sinnvoll erscheit.
+Leert man ihn aber so wird die Funktion "Papierkorb leeren" aufgerufen, welche die darin liegenden Dateien endgültig löscht und das Icon ändert. Die Funktion steht nichmehr zur Verfügung, weil der Zustand (eine Propertie) des Papierkorbes leer ist und es somit keinen Sinn macht diese Funktion auszuführen.
 
-Fazit: Ein Objekt ist eine Sammlung von Eigenschaften und Methoden und die Methoden können abhängig von einem Zustand verfügbar sein, oder auch nicht.
+*Fazit: Ein Objekt ist eine Sammlung von Eigenschaften und Methoden und die Methoden können abhängig von einem Zustand verfügbar sein, müssen aber nicht.*
 
 **Wie erzeugt man jetzt ein neues Objekt?**
 
-Dazu muss man wissen was eine Klasse in JavaScirpt ist: Eine Klasse ist eine Zusammenfassung von mehreren Objekten und Methoden.
-Auch sogenannte "Bauvorschriften".
+Dazu muss man wissen was eine Klasse ist: Eine Klasse ist eine Zusammenfassung von mehreren Objekten und Methoden.
 Hierbei gibt es eine Syntax die mit einem Schlüsselwort "new" beginnt.
 Eine Standartklasse in JavaScirpt ist z.B. "Date". Also wird jetzt mithilfe
-eines Konstruktors aus einer Klasse (z.B. "Date") ein Objekt.
+eines Konstruktors aus einer Klasse (z.B. "Date") ein Objekt (eine Instanz dieser Klasse) erzeugt.
+Man könnte sie auch mit einer "Bauvorschrift" vergleichen.
 
 ```js
 funktion objekteErzeugen(){
@@ -286,9 +285,9 @@ Arrays und Objekte sind in JavaScript "so gut wie das gleiche". Es ist eine Samm
 In JavaScript sollte man Objekte als Arrays und Arrays als Objekte sehen.
 Es gibt 3 Varianten einen Array zu erzeugen:
 
-* Mithilfe der Konstruktor-Methode
-* Json Notation
-* Literale Form
+* Mithilfe der Konstruktor-Methode (var a1)
+* Json Notation (var a2)
+* Literale Form (var a3)
 
 ```js
 funktion arraysErzeugen(){
@@ -347,9 +346,9 @@ function klassenElemente(){
 
 **Was ist das DOM-Konzept?**
 
-DOM (Document Objekt Model) ist ein Baumartigestruktur, mit Verzweigungen von Ästen (Knoten, engl. nodes) zu verstehen.
+DOM (Document Objekt Model) ist eine baumartige Struktur, mit Verzweigungen von "Ästen" (Knoten, engl. nodes) zu verstehen.
 Es ist also eine spezifikation für eine Schnittstelle um einen Zugriff auf HTML-Dokumente zu gewehrleisten.
-Das DOM-Konzept finden sie auch bei FireBug.
+
 
 **DOM-Objekte**
 
@@ -404,12 +403,12 @@ function infoBild1() {
 	document.getElementById("bild1info").innerHTML = document.getElementById("b1").height;
 }
 ```
-Wichtig ist hierbei das man mit .attribut so ziemlich alle Attribute von HTML anschreiben kann. Mit .innerHTML kann man alle Tags und Attribute in der HTML ansprechen.
+Wichtig ist hierbei das man mit .attribut so ziemlich alle Attribute von HTML anschreiben kann. Mit .innerHTML kann man  - wie der name schon sagt -  alle inneren Strukturen einer HTML neu bestimmen.
 Das macht JavaScript so weitläufig und weiterführend.
 
 **Funktionsreferenzen und anonyme Funktionen**
 
-Statt Befehle direkt in ein HTML-Dokument einzubinden, verwendet man es wie bei einer exterenen CSS-Datei.
+Statt Befehle direkt in ein HTML-Dokument einzubinden, verwendet man eine exterenen JS-Datei.
 
 ```js
 function init() {
@@ -421,7 +420,7 @@ window.onload=init;
 ```
 Das ist eine anonyme Funktion, weil sie keinen Namen hat doch ist sie ansprechbar durch die Id ihres Elementes.
 Damit diese DOM-Elemente überhaupt funktionieren, müssen sie erst nach dem laden der Seite aktiv werden.
-Dafür gibt es einen Zeiger, eine Funktionsreferenz (windows.onload=init;).
+Dafür gibt es einen Zeiger (windows.onload=init;).
 
 **DHTML**
 
@@ -441,3 +440,8 @@ window.onload = function() {
 ```
 Hierbei vergrössert sich das erste Bild mit dem Tag "img" immer um 1 Pixel bis zu maximal 300px.. Hierbei ist dieses .setTimeout wichitg anzusehen.
 Denn es macht nach jedem "Vergrössern", 1 Millisekunde Pause. Wir sehen diese Pausen nicht, daher erscheint das ganze flüssig.
+
+
+***Wo kann ich diese Videos finden?***
+
+Hier ist ein explizieter JavaScript Crashkurs für Anfänger: [Video2Brain JavaScript](https://www.video2brain.com/de/videotraining/javascript-crashkurs-2012)
