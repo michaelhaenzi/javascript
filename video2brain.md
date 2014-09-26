@@ -56,7 +56,13 @@ Man benutzt für eine neue Variable einfach das Schlüsselwort `var`. Dieses  Sc
 
 Eine einfache Deklaration in JavaScript:
 ```js
-var variabelnname = number, string, boolish oder object
+var zahl = 7,
+	text = "Hallo Welt",
+	bool = true;
+var objekt = {
+		vorname: 'Peter',
+		nachname: 'Meier'
+}
 ```
 
 **Undefined, not defined, null und NaN**
