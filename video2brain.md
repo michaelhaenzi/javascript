@@ -18,7 +18,8 @@ Webseiten bei denen solche Funktionen genutzt werden:
 
 * Google Map (Zoomen, Verschieben, Route berechnen etc.)
 * Yahoo! (Formular Überprüfung)
-* Andere Seiten
+* Amazon (Wahrenkorb, Einkäufe)
+* Weitere Seiten
 
 ###Was braucht es um JavaScript anzuwenden?
 
@@ -26,7 +27,7 @@ Um JavaScript anzuwenden sollte man sich bereits mit HTML und CSS auskennen. Den
 Erforderliche Programme:
 Zum Erstellen einer einfachen Website genügt ein Editor wie Sublime oder Atom. Doch auch Visual Studio oder Aptana Studio sind dafür geeignet. Natürlich will man seine Websites auch auf Aussehen und Funktionalität testen können und sollte daher einen oder mehrere Browser installiert haben.
 
-###Firebug, was ist das?
+**Firebug, was ist das?**
 
 Firebug ist ein Addon für den Firefox Browser. Es ist ein Tool welches erlaubt die Console zu lesen und den Quellcode der Website einzusehen. Man sollte es sicherlich installieren wenn man diesen Browser bevorzugt.
 
