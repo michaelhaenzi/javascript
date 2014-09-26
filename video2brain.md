@@ -5,7 +5,7 @@ Video2Brain JavaScript
 ###Was ist JavaScript überhaupt?
 
 JavaScript ist eine Programmiersprache die häufig im Clientbereich, das heisst beim Benutzer einer Website oder Webapp eingesetzt wird. JavaScript wird aber immer öfter auch als Backendsprache verwendet.
-Es dient der Aufbereitung von Daten über einen Server. JavaScript gestattet dynamische Aktionen auf einer Webseite. JS ist auf fast allen modernen und neueren Seiten aufzufinden.
+Es dient der Aufbereitung von Daten über einen Server. JavaScript gestattet dynamische Aktionen auf einer Webseite.
 
 ###Wo wird JavaScript konkret eingesetzt?
 
@@ -24,7 +24,7 @@ Webseiten bei denen solche Funktionen genutzt werden:
 
 Um JavaScript anzuwenden sollte man sich bereits mit HTML und CSS auskennen. Denn JavaScript wird dazu verwendet eine Website dynamisch zu gestalten. Man kann bereits mit HTML und CSS eine sehr gute Website realisieren, für richtig komplexe Funbktionalitäten kommt man aber nicht um JavaScript herum.
 Erforderliche Programme:
-Zum Erstellen einer einfachen Website genügt ein Editor wie Sublime oder Atom. Doch um auch Visual Studio oder Aptana Studio sind dafür geeignet. Natürlich will man seine Websites auch auf Aussehen und Funktionalität testen können und sollte daher einen oder mehrere Browser installiert haben.
+Zum Erstellen einer einfachen Website genügt ein Editor wie Sublime oder Atom. Doch auch Visual Studio oder Aptana Studio sind dafür geeignet. Natürlich will man seine Websites auch auf Aussehen und Funktionalität testen können und sollte daher einen oder mehrere Browser installiert haben.
 
 ###Firebug, was ist das?
 
@@ -44,7 +44,7 @@ Es gibt 3 Arten beim Einbinden von JS. Durch eine Inline-Referenz, Skript-Contai
 | Quellcode | ```<script src="javascript.js"></script> ``` |
 
 
-###Die Variable `var`
+###Die Variable '`var`'
 
 Man benutzt für eine neue Variable einfach das Schlüsselwort `var`. Dieses  Schlüsselwort kann folgende "Wertarten" haben:
 
@@ -69,7 +69,7 @@ Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und nu
 * undefined
 * null
 
-###Operationen/ Operatoren
+###Operatoren
 
 **Arithmetische Operatoren**
 
@@ -385,6 +385,7 @@ function zugriff2() {
 ```
 Es gibt noch viele weitere Möglichkeiten auf Elemente zu zugreifen, die meisten sind aber veraltet und funktionieren nicht bei manchen Elementen.
 Die 2 wichtigsten Zugriffsmöglichkeiten sind also über:
+
 * **getElementsByTagName**
 * **getElementById**
 
@@ -442,6 +443,11 @@ Hierbei vergrössert sich das erste Bild mit dem Tag "img" immer um 1 Pixel bis 
 Denn es macht nach jedem "Vergrössern", 1 Millisekunde Pause. Wir sehen diese Pausen nicht, daher erscheint das ganze flüssig.
 
 
-***Wo kann ich diese Videos finden?***
+***Wo kann ich diese Informationen finden?***
 
-Hier ist ein explizieter JavaScript Crashkurs für Anfänger: [Video2Brain JavaScript](https://www.video2brain.com/de/videotraining/javascript-crashkurs-2012)
+*Hier ist ein explizieter JavaScript Crashkurs für Anfänger: [Video2Brain JavaScript](https://www.video2brain.com/de/videotraining/javascript-crashkurs-2012)*
+
+<br />
+```
+Michael Haenzi, Switzerland 2014
+```
