@@ -123,3 +123,17 @@ Einbinden in die HTML-Datei:
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript">
 </script>
 ```
+
+**Ajax load() Methode**
+
+Diese Methode lädt Daten vom Server und fügt die Daten in das selektierten Element ein. Syntax:
+```js
+$(selector).load(URL, Daten, Rückruf);
+```
+
+**Request: GET und POST**
+
+Für eine 'request-response' gibt es zwei Methoden um zwischen Client und Server, eine verbindung zu errichten:
+
+* GET - einfach Ausgedrückt: Er nimmt die gesuchten Daten vom Server. Er könnte eine cached Daten zurückbringen.
+* POST - Er kann Daten auch vom Server greifen und verwenden. Diese Methode bringt nie eine gecachete Datei zurück. Man brauch Post auch viel für ein senden von gewünschten Daten.
