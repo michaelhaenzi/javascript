@@ -77,3 +77,49 @@ $(".test").hide()
 $("#test").hide()
  //verstecke das Element mit der Id 'test'.
 ```
+
+**Ready Document**
+
+Man umklammert jede Funktion mit einem Ready Document. Weil jQuery erst bereit sein oder Zugriff gewähren sollte, wenn die Seite fertig geladen ist.
+Diese geht wiefolgt so:
+
+```js
+$(document).ready(function(){
+
+   // jQuery Methoden hier..
+
+});
+```
+
+**Weitere Selektoren in jQuery**
+
+| Syntax | Beschreibung |
+| ------ | ------------ |
+| $(" \* ") | Alle Elemente auswählen |
+| $(this) | Ausgewähltes jetziges Element |
+| $("p.intro") | Alle Paragraphen mit der Klasse 'Intro' |
+| $("p:first") | Das erste Paragraphen Element |
+| $("ul li:first-child") | Alle ersten `<li>` Elemente in jedem <ul> |
+| $("a[target!='\ _ blank']") | Alle `<a>` Elemente die nicht gleich "\ _ blank" sind |
+
+###Events
+
+**Meist genutzten Events**
+
+|Maus Events|Tastatur Events|Form Events|Document/ Window Events|
+|---------|----------|----------|----------------|
+|click|keypress|submit|load|
+|dblclick|keydown|change|scroll|
+|mouseenter|keyup|focus|resize|
+|mouseleave|-|blur|unload|
+
+
+##Ajax
+
+Mit JavaScirpt, Daten vom Server nachgefordert werden, die dann mit DHTML in die Webseite eingebaut werden.
+Dabei bleibt die bereits geladene Seite vorhanden. Hierfür braucht man eine implementierte Bibliotheke von jQuery.
+Einbinden in die HTML-Datei:
+```html
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript">
+</script>
+```
