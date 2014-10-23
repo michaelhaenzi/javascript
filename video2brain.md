@@ -242,12 +242,12 @@ Ein Objekt ist ein Gegenstand der realen Welt, ein greifbarer Gegenstand den man
 Ein Objekte hat demnach immer "Eigenschaften".
 Beispiel am Papierkorb:
 
-![Alt text](Objekt1.png)
+![Alt text](https://github.com/michaelhaenzi/javascript/blob/master/Objekt1.PNG)
 
 Die Methoden eines Objektes sind aktive Schritte welche man mit einem Objekt macht oder ein Objekt erledigt. Sie sind Funktionen die an ein Objekt gebunden sind.
 Hier wieder das Beispiel:
 
-![Alt text](Objekt2.png)
+![Alt text](https://github.com/michaelhaenzi/javascript/blob/master/Objekt2.PNG)
 
 Vorher war der Papierkorb noch voll und hatte ein Icon, bei dem man sieht das er gefüllt ist.
 Leert man ihn aber so wird die Funktion "Papierkorb leeren" aufgerufen, welche die darin liegenden Dateien endgültig löscht und das Icon ändert. Die Funktion steht nichmehr zur Verfügung, weil der Zustand (eine Propertie) des Papierkorbes leer ist und es somit keinen Sinn macht diese Funktion auszuführen.
