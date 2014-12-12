@@ -117,10 +117,10 @@ Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und nu
 = (Gleichheitszeichen)
 
 **Verknüpfungs-Operatoren**
-&& (UND-Verknüpfung)
-|| (ODER-Verknüpfung)
-/>> (Bitverschiebung rechts)
-<< (Bitverschiebung links)
+* && (UND-Verknüpfung)
+* || (ODER-Verknüpfung)
+* />> (Bitverschiebung rechts)
+* << (Bitverschiebung links)
 
 ###Kontrollstrukturen
 
