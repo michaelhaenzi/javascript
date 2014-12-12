@@ -67,7 +67,7 @@ var objekt = {
 
 **Undefined, not defined, null und NaN**
 
-Wenn man versucht eine Operation mit keinen Zahl Variablen auszugeben, dann kommt 'NaN', was ausgeschrieben 'NotaNumber' bedeutet.
+Wenn man versucht eine Operation mit keiner Zahl Variablen auszugeben, dann kommt 'NaN', was ausgeschrieben 'NotaNumber' bedeutet.
 Wenn man einer Variable in JavaScirpt keinen wert zuteilt, also z.B.: `var a;`, dann ist die Variable `a`  nicht definiert 'undefined'. Welches einen eigenen Funktionsnamen in JavaScript darstellt.
 Da gibt es noch 'null' und 'null' bedeutet leer.
 Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und null defierniert hat.
@@ -97,9 +97,9 @@ Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und nu
 
 **Vergleichs Operatoren**
 
-== (wenn beiden gleich)
+== (gleich)
 
-\!= (wenn beide ungleich)
+\!= (ungleich)
 
 < (kleiner als)
 
@@ -116,6 +116,11 @@ Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und nu
 
 = (Gleichheitszeichen)
 
+**Verknüpfungs-Operatoren**
+&& (UND-Verknüpfung)
+|| (ODER-Verknüpfung)
+/>> (Bitverschiebung rechts)
+<< (Bitverschiebung links)
 
 ###Kontrollstrukturen
 
