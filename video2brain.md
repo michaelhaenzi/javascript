@@ -122,7 +122,7 @@ Keines dieser 3 sind in dem Sinne "Nichts" weil JavaScript NaN, undefined und nu
 
 || (ODER-Verknüpfung)
 
-/>> (Bitverschiebung rechts)
+\>> (Bitverschiebung rechts)
 
 << (Bitverschiebung links)
 
